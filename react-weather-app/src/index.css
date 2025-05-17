@@ -1,0 +1,185 @@
+@import "tailwindcss";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+input{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #000000;
+    margin-bottom: 1rem;
+}
+button{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #333333;
+}
+button:active{
+    background-color: #666666;
+}
+button:focus{
+    outline: none;
+}
+button:focus-visible{
+    outline: 2px solid #000000;
+}
+button:focus-visible{
+    outline-offset: 2px;
+}
+button:disabled{
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+button:disabled:hover{
+    background-color: #cccccc;
+}
+button:disabled:active{
+    background-color: #cccccc;
+}
+button:disabled:focus{
+    outline: none;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+@keyframes Anim {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+h1{
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+}
+h2{
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: center;
+}
+p{
+    font-size: 0.8rem;
+    margin: 1rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+section{
+   animation: Anim 1s ease 0s 1 normal forwards;
+   background-color: #ffffff;
+    margin: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid #000000;
+    border-radius: 0.2rem 1rem 0.2rem 1rem;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+}
+
+.now-weather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.forecast{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0.5rem;
+}
+
+
+
+
+@media (max-width: 768px) {
+  body {
+    height: 200vh;
+    padding: 1rem;
+  }
+
+  form {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  h3{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  p {
+    font-size: 0.95rem;
+    margin: 0.5rem;
+    text-align: center;
+  }
+
+  .now-weather,
+  .forecast {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 1rem ;
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+
+  }
+  .forecast-day{
+    width: 300px;
+    padding: 0.5rem;
+    border: 1px solid #000000;
+     border-radius: 0.2rem 1rem 0.2rem 1rem;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2);
+  }
+
+  section {
+    width: 400px;
+    padding: 1rem;
+  }
+}
