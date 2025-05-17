@@ -67,7 +67,10 @@ const App = () => {
     const [error, setError] = useState<string | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
     //API key
-    const apiKey: string = ' '; 
+    const apiKey: string = process.env.REACT_APP_WEATHER_API_KEY ?? '';
+    if (!apiKey) {
+      throw new Error('REACT_APP_WEATHER_API_KEY environment variable is not set');
+    }
 
 //fetching data
 const fetchWeatherData = async (city: string) => {
