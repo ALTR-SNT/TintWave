@@ -72,6 +72,23 @@ header{
 		transform: scale(1);
 	}
 }
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(270deg, #b3e0ff, #80ccff, #4da6ff, #1a8cff); /* Більше кольорів для цікавішої анімації */
+  background-size: 400% 400%; /* Збільшуємо розмір, щоб було що рухати */
+  animation: gradient-animation 15s ease infinite; /* Застосовуємо анімацію */
+}
 h1{
     font-size: 2rem;
     color: #000000;
@@ -95,7 +112,7 @@ main{
 }
 section{
    animation: Anim 1s ease 0s 1 normal forwards;
-   background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
     margin: 0.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
