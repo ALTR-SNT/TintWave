@@ -173,7 +173,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
   return (
     <div >
     <header >
-      <h1 className=''>Weather App</h1>
+      <h1 className=''>TintWave</h1>
       <form onSubmit={handleSubmit}>  
       <input type="text" placeholder="Enter city name" value={city} onChange={handleChange}/>
       <button type="submit" >Get Weather</button>
