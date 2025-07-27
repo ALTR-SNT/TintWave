@@ -141,7 +141,7 @@ section{
 @media (max-width: 768px) {
   body {
     height: 100vh;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   header {
     margin: 0.5rem;
@@ -172,7 +172,7 @@ section{
     font-weight: bold;
   }
   h3{
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     font-weight: bold;
   }
   p {
@@ -180,10 +180,13 @@ section{
     margin: 0.1rem;
     text-align: center;
   }
-
+  section{
+    border: none;
+     border-radius: 1rem;
+  }
   .now-weather,
   .forecast {
-    height: 150px;
+    height: 180px;
     width: 300px;
     gap: 0.1rem;
     margin: 0.5rem;
