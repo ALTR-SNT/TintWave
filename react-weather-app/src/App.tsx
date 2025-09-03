@@ -226,7 +226,7 @@ const App = () => {
       };
 
       return (
-        <div>
+        <>
         <header>
           <h1>{t.title}</h1>
           
@@ -248,11 +248,11 @@ const App = () => {
           <button type="submit">{t.button}</button>
           </form>
         </header>
-
-        {error && <h2 className="error">{error}</h2>}
+        <main>
+           {error && <h2 className="error">{error}</h2>}
         {loading && <h2>{t.loading}</h2>}
         {weatherData && (
-          <main>
+          <div className="weather-container">
           <section>
              <h2>{t.currentWeather}</h2>
             <div className="now-weather"> 
@@ -287,9 +287,10 @@ const App = () => {
             </div>
           </section>
           )}
-        </main>
-        )}
         </div>
+        )}
+        </main>
+        </>
       )
 }
 
