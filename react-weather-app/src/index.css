@@ -91,7 +91,7 @@ header{
 .animated-gradient {
   background: linear-gradient(130deg, #b3e0ff, #80ccff, #bb4dff, #57058a); /* Більше кольорів для цікавішої анімації */
   background-size: 300% 300%; /* Збільшуємо розмір, щоб було що рухати */
-  animation: gradient-animation 40s ease infinite; /* Застосовуємо анімацію */
+  animation: gradient-animation 20s ease infinite; /* Застосовуємо анімацію */
 }
 h1{
     font-size: 2rem;
